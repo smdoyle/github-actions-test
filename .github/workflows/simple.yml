@@ -1,7 +1,10 @@
 name: Shell Commands
 
 on:
-  push:
+  schedule:
+    - cron: "0/5 * * * *"
+    - cron: "0/6 * * * *"
+  pull_requests:
 
 jobs:
   run-shell-command: 
